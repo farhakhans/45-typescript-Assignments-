@@ -1,11 +1,22 @@
-// Magicians: Make a array of magician’s names. 
-// Pass the array to a function called show_magicians(), 
-// which prints the name of each magician in the array.
-function show_magicians(magicians) {
-    magicians.forEach(function (magicians, index) {
-        console.log("".concat(index + 1, ". ").concat(magicians));
-    });
+// Great Magicians: Start with a copy of your program from Exercise 39. 
+// Write a function called make_great() that modifies 
+// the array of magicians by adding the phrase the Great to each magician’s name. 
+// Call show_magicians() to see that the list has actually been modified.
+// function make_great(magicians: string[]): void {
+//     magicians.forEach((magicians , index) => {
+//         console.log(`${index +1}. ${magicians}`);
+//     });
+// }
+// console.log("These are Pakistani Magicions!");
+// const pakistaniMagicians: string[] = ["Ejaz Mughal", "M.Yaseen", "Mian Afzal Rashid", "AS Jillani"];
+// make_great(pakistaniMagicians);
+// Define an array of magicians
+var magicians = ["Ejaz Mughal", "M.Yaseen", "Mian Afzal Rashid", "AS Jillani"];
+// Function to modify the array of magicians by adding "the Great" to each magician's name
+function makeGreat(magicians) {
+    return magicians.map(function (magician) { return "the Great ".concat(magician); });
 }
-console.log("These are Pakistani Magicions!");
-var pakistaniMagicians = ["Ejaz Mughal", "M.Yaseen", "Mian Afzal Rashid", "AS Jillani"];
-show_magicians(pakistaniMagicians);
+// Call makeGreat function to modify the magicians
+magicians = makeGreat(magicians);
+// Show the modified list of magicians
+magicians.forEach(function (magician) { return console.log(magician); });
