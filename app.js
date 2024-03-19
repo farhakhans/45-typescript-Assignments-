@@ -1,19 +1,29 @@
-// Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. 
-// The function should have one parameter that collects as many items as the function call provides, 
-// and it should print a summary of the sandwich that is being ordered. Call the function three times, 
-// using a different number of arguments
-function orderSandwich(items) {
-    console.log("Sandwich order summary:");
-    console.log("Bread");
-    for (var _i = 0, items_1 = items; _i < items_1.length; _i++) {
-        var item = items_1[_i];
-        console.log(item);
+// Cars: Write a function that stores information about a car in a Object. 
+// The function should always receive a manufacturer and a model name. 
+// It should then accept an arbitrary number of keyword arguments.
+//  Call the function with the required information and two other name-value pairs,
+//   such as a color or an optional feature.
+//    Print the Object that’s returned to make sure all the information was stored correctly.
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+function createCar(manufacturer, modelName) {
+    var extras = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        extras[_i - 2] = arguments[_i];
     }
-    console.log("Bread");
-    console.log("Enjoy your sandwich!\n");
+    var car = __assign({ manufacturer: manufacturer, modelName: modelName }, extras.reduce(function (acc, extra) { return (__assign(__assign({}, acc), extra)); }, {}));
+    return car;
 }
-// Call the function with different numbers of arguments
-orderSandwich(["Cheese", "Tomato", "Lettuce"]);
-orderSandwich(["Ham", "Mustard"]);
-orderSandwich(["Turkey"]);
-console.log("Enjoy test of diffrent dish");
+// Example usage:
+var myCar = createCar("Toyota", "camry", { color: "blue" }, { year: 2023 });
+// Print the result
+console.log(myCar);
