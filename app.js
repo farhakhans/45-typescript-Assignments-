@@ -1,9 +1,12 @@
-// Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, 
-// “Hello Eric, would you like to learn some Python today?”
-var personName = "farhana";
-// Convert to lowercase
-console.log("Lowercase:", personName.toLowerCase());
-// Convert to uppercase
-console.log("Uppercase:", personName.toUpperCase());
-// Convert to titlecase
-console.log("Titlecase:", personName.replace(/\b\w/g, function (c) { return c.toUpperCase(); }));
+"use strict";
+// Names: Store the names of a few of your friends in a array called names. 
+// Print each person’s name by accessing each element in the list, one at a time.
+// store called name:
+// let members: string[] =['saima', 'farhana','fouzia','laiba', ];
+// for(let i=0; i<members.length; i++){
+//     console.log(members[i]);
+// }
+let members = ['saima', 'farhana', 'fouzia', 'laiba',];
+for (let i = 1; i < members.length; i++) {
+    console.log(members[i]);
+}
