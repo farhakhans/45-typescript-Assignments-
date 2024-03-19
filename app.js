@@ -1,8 +1,9 @@
-// Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, 
-// but each message should be personalized with the person’s name.
-// greetings programme members name and message
-var members = ['saima', 'farhana', 'fouzia', 'laiba',];
-var message = 'tomorow will be bithday to my friend  ';
-for (var i = 0; i < members.length; i++) {
-    console.log(message + members[i]);
+// Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car,
+//  and make a list that stores several examples.
+//  Use your list to print a series of statements about these items, 
+// such as “I would like to own a Honda motorcycle.”
+// excersie 13 transportaion list 
+var transportaion = ['civic', 'bike', 'bus', 'suzuki', 'coach',];
+for (var i = 0; i < transportaion.length; i++) {
+    console.log("i would like to own a " + transportaion[i]);
 }
