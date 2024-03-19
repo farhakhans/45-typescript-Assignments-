@@ -1,5 +1,5 @@
 {
-  "name": "18-seeing-the-world",
+  "name": "19-dinner-guests",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.11.20"
+    "@types/node": "^20.11.23"
   }
 }
