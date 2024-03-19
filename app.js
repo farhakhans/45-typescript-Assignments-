@@ -1,25 +1,17 @@
-// // Ordinal Numbers: Ordinal numbers indicate their position in a array, 
-// such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
-// • Store the numbers 1 through 9 in a array.
-// • Loop through the array.
-// • Use an if-else chain inside the loop to print the proper ordinal ending for each number.
-//  Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", 
-//  and each result should be on a separate line.
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
-    var num = numbers_1[_i];
-    var ordinalEnding = void 0;
-    if (num === 1) {
-        ordinalEnding = "st";
-    }
-    else if (num === 2) {
-        ordinalEnding = "nd";
-    }
-    else if (num === 3) {
-        ordinalEnding = "rd";
-    }
-    else {
-        ordinalEnding = "th";
-    }
-    console.log("".concat(num).concat(ordinalEnding));
+// Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
+// Array of favorite pizzas
+var favoritePizzas = [" pepperoni ", "BBQ Chicken", "Spicy Beef", 'Margherita'];
+// Printing the names of each pizza
+console.log("Names of favorite pizzas:");
+for (var _i = 0, favoritePizzas_1 = favoritePizzas; _i < favoritePizzas_1.length; _i++) {
+    var pizza = favoritePizzas_1[_i];
+    console.log(pizza);
 }
+// Printing a sentence using the name of each pizza
+console.log("\nSentences about favorite pizzas:");
+for (var _a = 0, favoritePizzas_2 = favoritePizzas; _a < favoritePizzas_2.length; _a++) {
+    var pizza = favoritePizzas_2[_a];
+    console.log("I like ".concat(pizza, " pizza."));
+}
+// Additional sentence about how much I like pizza
+console.log("\nI really love pizza!");
