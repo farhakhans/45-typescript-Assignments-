@@ -1,7 +1,9 @@
-"use strict";
-// 19 EXCERCISE Dinner Guests: Working with one of the programs from Exercises 14 through 18, 
-// print a message indicating the number of people you are inviting to dinner.
-Object.defineProperty(exports, "__esModule", { value: true });
-var app_1 = require("../14 Guest List/app");
-console.log(" n PRINTING NUMBER OF GUEST INVITED");
-console.log("we had finally invited ".concat(app_1.guest_list.length, " from excercise 14"));
+// Think of something you could store in a array. For example, 
+// you could make a list of mountains, rivers, countries, cities, languages, 
+// or anything else you’d like. Write a program that creates a list containing these items
+var languages = ['URDU ', 'ENGLISH ', 'ARABIC ', 'FARSI ', 'HINDI ',];
+console.log("list of languages:");
+for (var _i = 0, languages_1 = languages; _i < languages_1.length; _i++) {
+    var top_1 = languages_1[_i];
+    console.log(top_1);
+}
