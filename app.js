@@ -1,11 +1,13 @@
-// They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these item
-var book = {
-    name: 'Typescript python',
-    Price: 5000
-};
-var watch = {
-    name: 'RADO SMART WATCH',
-    Price: 2000
-};
-console.log("book name: ".concat(book.name, ", price: $").concat(book.Price, " "));
-console.log("watch name:  ".concat(watch.name, " , Price:  $").concat(watch.Price));
+"use strict";
+// Intentional Error: If you haven’t received an array index error in one of your programs yet, 
+// try to make one happen. Change an index in one of your programs to produce an index error. 
+// Make sure you correct the error before closing the program.
+let array = ['FARHANA', ' LAIBA', 'AREEBA', 7, 8, 9,];
+console.log(array[10]);
+console.log(array[5]);
+console.log(array[0]);
+console.log(array[1]);
+console.log(array[2]);
+console.log(array[3]);
+console.log(array[4]);
+console.log(array[5]);

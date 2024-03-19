@@ -1,5 +1,5 @@
 {
-  "name": "21-typescript-object-store",
+  "name": "22-intentional-error",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.11.23"
+    "@types/node": "^20.11.24"
   }
 }
