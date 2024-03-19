@@ -1,17 +1,25 @@
-// List of current users
-var current_Users = ['farhana', 'laiba', 'areeba', 'shama', 'uzma'];
-// List of new users
-var new_Users = ['areeba', 'farzana', 'samina', 'uzma', 'komal'];
-// Convert currentUsers list to lowercase for case insensitive comparison
-var current_UsersLower = current_Users.map(function (user) { return user.toLowerCase(); });
-// Loop through newUsers list
-for (var _i = 0, new_Users_1 = new_Users; _i < new_Users_1.length; _i++) {
-    var new_User = new_Users_1[_i];
-    // Check if new username is already used (case insensitive)
-    if (current_UsersLower.includes(new_User.toLowerCase())) {
-        console.log("Sorry, the username '".concat(new_User, "' is not available. Please enter a new username."));
+// // Ordinal Numbers: Ordinal numbers indicate their position in a array, 
+// such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+// • Store the numbers 1 through 9 in a array.
+// • Loop through the array.
+// • Use an if-else chain inside the loop to print the proper ordinal ending for each number.
+//  Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", 
+//  and each result should be on a separate line.
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
+    var num = numbers_1[_i];
+    var ordinalEnding = void 0;
+    if (num === 1) {
+        ordinalEnding = "st";
+    }
+    else if (num === 2) {
+        ordinalEnding = "nd";
+    }
+    else if (num === 3) {
+        ordinalEnding = "rd";
     }
     else {
-        console.log("The username '".concat(new_User, "' is available."));
+        ordinalEnding = "th";
     }
+    console.log("".concat(num).concat(ordinalEnding));
 }
