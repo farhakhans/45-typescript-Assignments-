@@ -1,28 +1,19 @@
-//Stages of Life: Write an if-else chain that determines a person’s stage of life. 
-// Set a value for the variable age, and then:
-//set a value for the variable age, and then:
-var age = 25;
-// If the person is less than 2 years old, print a message that the person is a baby
-// If the person is at least 2 years old but less than 4, print a message that the person is a toddler
-// • If the person is at least 4 years old but less than 13, print a message that the person is a kid.
-// • If the person is at least 13 years old but less than 20, print a message that the person is a teenager
-// • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
-// • If the person is age 65 or older, print a message that the person is an elder.
-if (age < 2) {
-    console.log(" person is a baby.");
+// Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent 
+// if statements that check for certain fruits in your array.
+// CHECK SPECIFIC FRUITS USING INDEPENDENT OF STATEMEN
+var favoriteFruits = ["apple", "banana", "strawberry", "kiwi", "mango"];
+if (favoriteFruits.includes("apple")) {
+    console.log("I love apples!");
 }
-else if (age >= 2 && age < 4) {
-    console.log("person is a toddler.");
+if (favoriteFruits.includes("banana")) {
+    console.log("Bananas are delicious!");
 }
-else if (age >= 4 && age < 13) {
-    console.log("person is a kid.");
+if (favoriteFruits.includes("strawberry")) {
+    console.log("Strawberries are so sweet!");
 }
-else if (age >= 13 && age < 20) {
-    console.log("person is a teenager.");
+if (favoriteFruits.includes("kiwi")) {
+    console.log("Kiwi is a refreshing fruit!");
 }
-else if (age >= 20 && age < 65) {
-    console.log(" person is an adult.");
-}
-else {
-    console.log("person is an elder.");
+if (favoriteFruits.includes("mango")) {
+    console.log("Mangoes are absolutely divine!");
 }
