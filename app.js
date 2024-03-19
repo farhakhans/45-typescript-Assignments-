@@ -1,9 +1,11 @@
-// Think of something you could store in a array. For example, 
-// you could make a list of mountains, rivers, countries, cities, languages, 
-// or anything else you’d like. Write a program that creates a list containing these items
-var languages = ['URDU ', 'ENGLISH ', 'ARABIC ', 'FARSI ', 'HINDI ',];
-console.log("list of languages:");
-for (var _i = 0, languages_1 = languages; _i < languages_1.length; _i++) {
-    var top_1 = languages_1[_i];
-    console.log(top_1);
-}
+// They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these item
+var book = {
+    name: 'Typescript python',
+    Price: 5000
+};
+var watch = {
+    name: 'RADO SMART WATCH',
+    Price: 2000
+};
+console.log("book name: ".concat(book.name, ", price: $").concat(book.Price, " "));
+console.log("watch name:  ".concat(watch.name, " , Price:  $").concat(watch.Price));
