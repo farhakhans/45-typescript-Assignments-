@@ -1,41 +1,25 @@
-// Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
-// • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
-// • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, 
-// print a message to that person letting them know you’re sorry you can’t invite them to dinner.
-// • Print a message to each of the two people still on your list, letting them know they’re still invited.
-// • Remove the last two names from your list, so you have an empty list.
-//  Print your list to make sure you actually have an empty list at the end of your program.
-var guest_list = ['farha', 'fouzia', 'laiba', 'areeba'];
-// for (var i = 0; i < guest_list.length; i++) {
-//     console.log('Respected sir/Madam . ' + guest_list[i] + ',\n\nnow invited you on dinner tomorow.\n\nthank you!\n\n\ ');
-// }
-var not_present = 'fouzia';
-var new_guest = 'talat';
-guest_list[1] = new_guest;
-// for (var i = 0; i < guest_list.length; i++) {
-//     console.log('Respected sir/Madam .' + guest_list[i] + ',\n\nnow invited you on dinner tomorow. \n\nthank you!\n\n\ ');
-// }
-console.log("miss. ".concat(not_present, " will not coming tomorow at dinner party"));
-// arry me 3 guest add kiye han.
-console.log('Good News! we find big table so we are inviting more 3 guest.');
-guest_list.unshift('Asma');
-guest_list.splice(2, 0, 'Reahana');
-guest_list.push('yasmeen');
-// yahan per 7 guest ko print karaya ha.
-for (var i = 0; i < guest_list.length; i++) {
-    console.log('Respected sir/Madam .' + guest_list[i] + ',\n\nnow invited you on dinner tomorow. \n\nthank you!\n\n\ ');
-}
-// sorry guest not inited
-console.log('\nsorry we can not arrange big table, only two persons will be invited ');
-//  yahan hum ne guest remove kiye han.
-while (guest_list.length > 2) {
-    var remove_guest = guest_list.pop();
-    console.log("sorry miss,".concat(remove_guest, ",  you are not invited for dinner "));
-}
-// hamare jo 2 baqi guest bache han .
-for (var i = 0; i < guest_list.length; i++) {
-    console.log('Respected sir/Madam .' + guest_list[i] + ',\n\nyou are still in ivited. \n\nthank you!\n\n\ ');
-}
-// me ne sare guest arry sec remove kr diye or 2 guest invited han
-guest_list.splice(0, 2);
-console.log(guest_list);
+// Seeing the World: Think of at least five places in the world you’d like to visit.
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+// alphabectical order 1st project
+var places = ['karachi', 'lahore', 'mirpurkhas', 'peshawar', 'quetta'];
+// console.log('original ' + places);
+// • Print your array in alphabetical order without modifying the actual list.
+// console.log('copy ' +[...places].sort());
+//  Show that your array is still in its original order by printing it.
+//  console.log('original ' + places);
+// • Print your array in reverse alphabetical order without changing the order of the original list
+console.log('unorder ' + __spreadArray([], places, true).sort().reverse());
+// • Show that your array is still in its original order by printing it again.
+console.log('unorder ' + __spreadArray([], places, true).sort().reverse());
+// • Reverse the order of your list. Print the array to show that its order has changed.
+console.log('original ' + places.sort());
+// • Reverse the order of your list again. Print the list to show it’s back to its original order
+console.log('original ' + places.sort().reverse());
